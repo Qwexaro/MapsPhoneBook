@@ -1,8 +1,10 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
         HashMap<String, Student> mapStudents = new HashMap<>();
+
         mapStudents.put("qwx.s.i@mail.ru",
                 new Student("Sergey", 24, "qwx.s.i@mail.ru", 8987667876l)
         );
@@ -14,6 +16,10 @@ public class Main {
         mapStudents.put("qwx.s.i@mail.ru",
                 new Student("Kuznechik", 21, "qwx.s.i@mail.ru", 8987667876l)
         );
+
+        for (Map.Entry<String, Student> currentEmailStudent : mapStudents.entrySet()) {
+
+        }
 
     }
 }
