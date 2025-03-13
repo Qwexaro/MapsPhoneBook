@@ -17,8 +17,10 @@ public class Student implements Comparable<Student> {
 
 
     public static void getListAllStudents() {
-        for (Map.Entry<String, Student> currentEmailAndName : mapStudents.entrySet()) {
-
+        for (Map.Entry<String, Student> currentEmailStudent : mapStudents.entrySet()) {
+            String currentEmail = currentEmailStudent.getKey(); // first parameters
+            Student currentStudent = currentEmailStudent.getValue(); // second parameters
+            System.out.println(currentEmail + " - " + currentStudent);
         }
     }
 

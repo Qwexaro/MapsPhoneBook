@@ -13,7 +13,8 @@ public class Main {
 
         new Student("Kuznechik", 21, "qwx.s.i@mail.ru", 8987667876l);
 
-        Student.removeSelectedStudent(8987667876l);
+
+        //Student.removeSelectedStudent(8987667876l);
         Student.getListAllStudents();
 
     }
