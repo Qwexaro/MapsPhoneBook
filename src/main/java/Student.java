@@ -17,13 +17,13 @@ public class Student implements Comparable<Student> {
 
 
     public static void getListAllStudents() {
-        for(Map.Entry<String, Student> currentEmailAndName : mapStudents.entrySet()){
+        for (Map.Entry<String, Student> currentEmailAndName : mapStudents.entrySet()) {
 
         }
     }
 
     public static void removeSelectedStudent(long phoneNumber) {
-        Iterator<Student> studentsIterator = setStudents.iterator();
+        Iterator<Student> studentsIterator = mapStudents.values().iterator();
         while (studentsIterator.hasNext()) {
 
             Student selectedStudent = studentsIterator.next();
