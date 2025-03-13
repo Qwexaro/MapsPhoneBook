@@ -1,7 +1,4 @@
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Objects;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Student implements Comparable<Student> {
     private String name;
@@ -20,8 +17,8 @@ public class Student implements Comparable<Student> {
 
 
     public static void getListAllStudents() {
-        for (Student currentStudent : setStudents) {
-            System.out.println(currentStudent);
+        for(Map.Entry<String, Student> currentEmailAndName : mapStudents.entrySet()){
+
         }
     }
 
