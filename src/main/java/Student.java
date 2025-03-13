@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Objects;
 import java.util.TreeSet;
@@ -7,14 +8,14 @@ public class Student implements Comparable<Student> {
     private int age;
     private String email;
     private long phoneNumber;
-    private static TreeSet<Student> setStudents = new TreeSet<>();
+    private static HashMap<String, Student> mapStudents = new HashMap<>();
 
     public Student(String name, int age, String email, long phoneNumber) {
         this.name = name;
         this.age = age;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        setStudents.add(this);
+        mapStudents.put(email, this);
     }
 
 
