@@ -62,13 +62,12 @@ public class PhoneBook {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         PhoneBook phoneBook = new PhoneBook();
-        String input;
 
         while (true) {
             System.out.println("Введите команду (ADD, FIND, LIST, EXIT): ");
-            input = scanner.nextLine();
+            String input = new Scanner(System.in).nextLine();
+
 
             if ("EXIT".equalsIgnoreCase(input)) break;
 
@@ -97,6 +96,5 @@ public class PhoneBook {
                     System.out.println("Неизвестная команда.");
             }
         }
-        scanner.close();
     }
 }
