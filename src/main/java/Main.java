@@ -18,7 +18,9 @@ public class Main {
         );
 
         for (Map.Entry<String, Student> currentEmailStudent : mapStudents.entrySet()) {
-
+            String currentEmail = currentEmailStudent.getKey(); // first parameters
+            Student currentStudent = currentEmailStudent.getValue(); // second parameters
+            System.out.println(currentEmail + " - " + currentStudent);
         }
 
     }
